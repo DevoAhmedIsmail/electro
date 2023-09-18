@@ -1,0 +1,26 @@
+.header-slider .swiper-button-next,
+.header-slider .swiper-button-prev {
+    background: #333a43;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-slider .swiper-button-next::after,
+.header-slider .swiper-button-prev::after {
+    font-size: 16px;
+    color: #fff;
+}
+
+.header-slider .swiper-pagination-bullet {
+    transition: all .35s ease-in-out;
+}
+
+.header-slider .swiper-pagination-bullet-active {
+    background-color: var(--yellowColor)!important;
+    width: 30px;
+    border-radius: 4px;
+}

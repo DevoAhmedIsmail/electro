@@ -1,0 +1,16 @@
+.dropdown {
+    opacity: 0;
+    top: 0;
+    transition: all 300ms;
+    background-color: var(--bgMode);
+    color: var(--textColor);
+    transition: all 300ms;
+    border-top: 3px solid var(--yellowColor);
+    padding: 10px 15px;
+    min-width: 160px
+}
+
+.link:hover .dropdown {
+    opacity: 1;
+    top: 30px;
+}

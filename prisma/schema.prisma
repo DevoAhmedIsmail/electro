@@ -1,0 +1,93 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  email     String
+  password  String
+  image     String?
+  createdAt DateTime? @default(now())
+  updatedAt DateTime? @updatedAt
+
+  favorites Favorites[]
+  cart      Cart[]
+}
+
+model Favorites {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  userId String @db.ObjectId
+
+  user     User       @relation(fields: [userId], references: [id])
+  products Products[]
+}
+
+model Cart {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  userId String @db.ObjectId
+
+  user     User       @relation(fields: [userId], references: [id])
+  products Products[]
+}
+
+model Products {
+  id                 String  @id @default(auto()) @map("_id") @db.ObjectId
+  cartId             String? @db.ObjectId
+  favoritesId        String? @db.ObjectId
+  newProductsId      String? @db.ObjectId
+  recommendationsId  String? @db.ObjectId
+  featuredProductsId String? @db.ObjectId
+  onSaleProductsId   String? @db.ObjectId
+  topRatedProductsId String? @db.ObjectId
+
+  title       String
+  description String
+  image       String
+  oldPrice    Int?
+  price       Int
+  category    String
+  colors      String[]
+
+  cart             Cart?             @relation(fields: [cartId], references: [id])
+  favorites        Favorites?        @relation(fields: [favoritesId], references: [id])
+  newProducts      NewProducts?      @relation(fields: [newProductsId], references: [id])
+  Recommendations  Recommendations?  @relation(fields: [recommendationsId], references: [id])
+  FeaturedProducts FeaturedProducts? @relation(fields: [featuredProductsId], references: [id])
+  OnSaleProducts   OnSaleProducts?   @relation(fields: [onSaleProductsId], references: [id])
+  TopRatedProducts TopRatedProducts? @relation(fields: [topRatedProductsId], references: [id])
+}
+
+model NewProducts {
+  id       String     @id @default(auto()) @map("_id") @db.ObjectId
+  products Products[]
+}
+
+model Recommendations {
+  id       String     @id @default(auto()) @map("_id") @db.ObjectId
+  products Products[]
+}
+
+model FeaturedProducts {
+  id       String     @id @default(auto()) @map("_id") @db.ObjectId
+  products Products[]
+}
+
+model OnSaleProducts {
+  id       String     @id @default(auto()) @map("_id") @db.ObjectId
+  products Products[]
+}
+
+model TopRatedProducts {
+  id       String     @id @default(auto()) @map("_id") @db.ObjectId
+  products Products[]
+}
+

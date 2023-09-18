@@ -1,0 +1,23 @@
+.partners-slider .swiper-button-next {
+    right: -7px;
+}
+.partners-slider .swiper-button-prev {
+    left: -7px;
+}
+
+.partners-slider .swiper-button-next::after,
+.partners-slider .swiper-button-prev::after {
+  font-size: 16px;
+  color: var(--textColor);
+  font-weight: bold;
+}
+
+.partners-slider .swiper-pagination-bullet {
+  transition: all 0.35s ease-in-out;
+}
+
+.partners-slider .swiper-pagination-bullet-active {
+  background-color: var(--yellowColor) !important;
+  width: 30px;
+  border-radius: 4px;
+}
