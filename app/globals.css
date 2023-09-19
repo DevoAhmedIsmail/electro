@@ -6,6 +6,7 @@
   --bgColor: #f2efe9;
   --bgMode: #fff;
   --bgCategory: #f2efe9;
+  --bgFooter: #f8f8f8;
   --softBg: #e6e6e6;
   --textColor: #333e48;
   --secondText: #333e48;
@@ -23,6 +24,7 @@
   --softBg: #495057;
   --softTextColor: #878787;
   --secondText: #d9d9d9;
+  --bgFooter: #181818;
 }
 
 .flex-center {

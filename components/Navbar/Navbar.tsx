@@ -15,7 +15,7 @@ import Badge from "./Badge";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[var(--bgColor)] py-2">
+    <nav className="bg-[var(--bgColor)] py-2 w-full z-50">
       <Container>
         <TopNavbar />
 
