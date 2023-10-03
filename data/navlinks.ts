@@ -29,27 +29,27 @@ export const links = [
   {
     id: 2,
     title: "Category",
-    href: "/",
+    href: "/category/all",
     children: [
       {
         id: 211,
         title: "Phone",
-        href: "/",
+        href: "/category/phone",
       },
       {
         id: 212,
         title: "Laptops",
-        href: "/",
+        href: "/category/laptops",
       },
       {
         id: 213,
         title: "Headphones",
-        href: "/",
+        href: "/category/headphones",
       },
       {
         id: 214,
         title: "Speakers",
-        href: "/",
+        href: "/category/speakers",
       },
     ],
   },

@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 import { Inter } from "next/font/google";
+import Sidebar from "@/components/Sidebar/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-[var(--bgMode)]`}>
         <ThemeContextProvider>
           <ThemeProvider>
             <Navbar />
+            <Sidebar />
             {children}
             <Footer />
           </ThemeProvider>

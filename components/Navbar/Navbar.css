@@ -13,4 +13,5 @@
 .link:hover .dropdown {
     opacity: 1;
     top: 30px;
+    z-index: 10;
 }

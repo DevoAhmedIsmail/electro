@@ -9,12 +9,10 @@ const NavLinks = () => {
   return (
     <div className="flex-center gap-3">
       {links.map((link) => (
-        <Link
-          href={link.href}
-          key={link.id}
-          className="flex-center gap-2 relative link"
-        >
-          <span className="font-semibold text-[15px]">{link.title}</span>
+        <div key={link.id} className="flex-center gap-2 relative link">
+          <Link href={link.href} className="font-semibold text-[15px]">
+            {link.title}
+          </Link>
 
           {link.children && (
             <span>
@@ -22,8 +20,8 @@ const NavLinks = () => {
             </span>
           )}
 
-          {link.children && <NavDropDown links={link.children} /> }
-        </Link>
+          {link.children && <NavDropDown links={link.children} />}
+        </div>
       ))}
     </div>
   );

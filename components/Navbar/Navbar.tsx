@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import TopNavbar from "./TopNavbar";
 import Container from "../Container";
@@ -12,8 +14,11 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoGitCompare } from "react-icons/io5";
 import NavLinks from "./NavLinks";
 import Badge from "./Badge";
+import useSideBar from "@/hooks/useSidebar";
 
 const Navbar = () => {
+  const { isOpen, onOpen } = useSideBar();
+    
   return (
     <nav className="bg-[var(--bgColor)] py-2 w-full z-50">
       <Container>
@@ -22,14 +27,14 @@ const Navbar = () => {
         <div className="py-8 flex-center justify-between text-[var(--textColor)]">
           {/* logo */}
           <div className="flex-center gap-4">
-            <AiOutlineMenu size={24} className="cursor-pointer block lg:hidden" />
+              <AiOutlineMenu size={24} onClick={onOpen} className="cursor-pointer block lg:hidden"/>
             <Link href="/" className="min-[1024px]:mr-16 mr-10">
               <LogoImg />
             </Link>
           </div>
 
           <div className="hidden lg:flex flex-1 gap-5">
-            <AiOutlineMenu size={24} className="cursor-pointer" />
+            <AiOutlineMenu size={24} onClick={onOpen} className="cursor-pointer" />
             <NavLinks />
           </div>
 

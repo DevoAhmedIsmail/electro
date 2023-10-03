@@ -7,7 +7,7 @@ type LinksType = {
 
 const NavDropDown = ({ links }: LinksType) => {
   return (
-    <div className="absolute dropdown shadow-sm flex flex-col gap-2 z-10">
+    <div className="absolute dropdown shadow-sm flex flex-col gap-2">
       {links.map((link) => (
         <Link key={link.id} href={link.href}>
           {link.title}

@@ -16,7 +16,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-[var(--bgMode)]">
+    <main className="">
       <Header />
       <Categories />
       <ProductSection title="Hot Products Today" products={HotProducts} />

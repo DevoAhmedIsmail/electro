@@ -4,12 +4,13 @@ import LogoImg from '../Navbar/LogoImg'
 
 import {TfiHeadphoneAlt} from "react-icons/tfi"
 import {FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp} from "react-icons/fa"
+import Link from 'next/link'
 
 const Footer = () => {
   return (
     <footer className='bg-[var(--bgFooter)] text-[var(--textColor)] py-8'>
       <Container>
-        <div className='flex items-center justify-between flex-col lg:flex-row'>
+        <div className='flex justify-between flex-wrap gap-y-8'>
           {/* Logo (section 1) */}
           <div className='flex items-start flex-col gap-4'>
             <LogoImg />
@@ -34,6 +35,56 @@ const Footer = () => {
               <FaWhatsapp size={24} className="hover:text-[var(--priceSaleColor)] transition-colors cursor-pointer"  />
             </div>
 
+          </div>
+
+          {/* Links */}
+          <div className='flex flex-col gap-3'>
+            <p className='font-bold'>Find In Fast</p>
+            <div className='flex flex-col gap-3'>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Accessories</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Gaming</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Laptops & Computer</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Mac Computers</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>PC Computers</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Ultrabooks</Link>
+            </div>
+          </div>
+          
+          {/* Links */}
+          <div className='flex flex-col gap-3'>
+            <p className='font-bold'>Information</p>
+            <div className='flex flex-col gap-3'>
+              <Link href="/" className='text-sm hover:font-semibold transition'>About Us</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Contact Us</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>All Collections</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Privacy policy</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Terms & Conditions</Link>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div className='flex flex-col gap-3'>
+            <p className='font-bold'>Customer Care</p>
+            <div className='flex flex-col gap-3'>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Wishlist</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Shopping Cart</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Shipping & Return</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>FAQs</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Ultrabooks</Link>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div className='flex flex-col gap-3'>
+            <p className='font-bold'>In the Spotlight</p>
+            <div className='flex flex-col gap-3'>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Electronics</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Toys</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Video Games</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Home Products</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Clothing</Link>
+              <Link href="/" className='text-sm hover:font-semibold transition'>Sports & Outdoors</Link>
+            </div>
           </div>
         </div>
       </Container>
