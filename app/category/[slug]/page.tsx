@@ -13,7 +13,7 @@ const Category = ({params}: ParamsProps) => {
     // console.log(params);
     
   return (
-    <main>
+    <main className='bg-[var(--bgMode)] py-8'>
         <Container>
         <div className='flex justify-between gap-8'>
             <div className="w-[20%] ">
