@@ -16,13 +16,11 @@ const Category = ({params}: ParamsProps) => {
     <main className='bg-[var(--bgMode)] py-8'>
         <Container>
         <div className='flex justify-between gap-8'>
-            <div className="w-[20%] ">
+            <div className="hidden lg:block w-[20%] ">
                 <ProductSectionHeader title='Filters' />
-                <div className="border rounded-md mt-3">
-                    <Filters />
-                </div>
+                <Filters />
             </div>
-            <div className="w-[80%] bg-violet-500">2</div>
+            <div className="w-full lg:w-[80%] bg-violet-500">2</div>
         </div>
         </Container>
     </main>
