@@ -42,7 +42,7 @@ const Partners = () => {
               alt="partner"
               width={210}
               height={63}
-              objectFit="contain"
+              className="object-contain"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -51,7 +51,7 @@ const Partners = () => {
               alt="partner"
               width={210}
               height={63}
-              objectFit="contain"
+              className="object-contain"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -60,7 +60,7 @@ const Partners = () => {
               alt="partner"
               width={210}
               height={63}
-              objectFit="contain"
+              className="object-contain"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -69,7 +69,7 @@ const Partners = () => {
               alt="partner"
               width={210}
               height={63}
-              objectFit="contain"
+              className="object-contain"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -78,7 +78,7 @@ const Partners = () => {
               alt="partner"
               width={210}
               height={63}
-              objectFit="contain"
+              className="object-contain"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -87,7 +87,7 @@ const Partners = () => {
               alt="partner"
               width={210}
               height={63}
-              objectFit="contain"
+              className="object-contain"
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -96,7 +96,7 @@ const Partners = () => {
               alt="partner"
               width={210}
               height={63}
-              objectFit="contain"
+              className="object-contain"
             />
           </SwiperSlide>
         </Swiper>

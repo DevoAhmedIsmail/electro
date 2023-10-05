@@ -1,4 +1,5 @@
 import Container from '@/components/Container'
+import DisplayProducts from '@/components/DisplayProducts/DisplayProducts'
 import Filters from '@/components/Filters/Filters'
 import ProductSectionHeader from '@/components/ProductSection/ProductSectionHeader'
 import React from 'react'
@@ -22,7 +23,9 @@ const Category = ({params}: ParamsProps) => {
                     <Filters />
                 </div>
             </div>
-            <div className="w-[80%] bg-violet-500">2</div>
+            <div className="w-[80%] ">
+                <DisplayProducts slug={params.slug} />
+            </div>
         </div>
         </Container>
     </main>
