@@ -1,4 +1,5 @@
 import Container from '@/components/Container'
+import DisplayProducts from '@/components/DisplayProducts/DisplayProducts'
 import Filters from '@/components/Filters/Filters'
 import ProductSectionHeader from '@/components/ProductSection/ProductSectionHeader'
 import React from 'react'

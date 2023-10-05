@@ -18,7 +18,7 @@ const BrandCard = ({ brand }: { brand: BrandType }) => {
         alt="brand"
         width={140}
         height={60}
-        objectFit="contain"
+        className="object-contain"
       />
       <p className="text-[var(--softTextColor)] mt-2 pr-[70px] text-[14px]">
         {brand.description}
@@ -29,7 +29,7 @@ const BrandCard = ({ brand }: { brand: BrandType }) => {
           alt="brand product"
           width={150}
           height={130}
-          objectFit="contain"
+          className="object-contain"
         />
       </div>
     </Link>

@@ -16,8 +16,7 @@ const Tips = () => {
                 src="/images/tip/tip01.webp"
                 alt="tips"
                 fill
-                objectFit="cover"
-                className="rounded-xl "
+                className="rounded-xl object-cover"
               />
             </div>
             <div className="px-3 md:px-3 py-5">
@@ -38,8 +37,7 @@ const Tips = () => {
                 src="/images/tip/tip02.webp"
                 alt="tips"
                 fill
-                objectFit="cover"
-                className="rounded-xl "
+                className="rounded-xl object-cover"
               />
             </div>
             <div className="px-3 md:px-3 py-5">

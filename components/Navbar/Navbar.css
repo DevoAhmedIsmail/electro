@@ -1,5 +1,6 @@
 .dropdown {
     opacity: 0;
+    visibility: hidden;
     top: 0;
     transition: all 300ms;
     background-color: var(--bgMode);
@@ -14,4 +15,14 @@
     opacity: 1;
     top: 30px;
     z-index: 10;
+    visibility: visible;
+}
+
+.link .dropdown a {
+    transition: all 300ms;
+}
+
+.link .dropdown a:hover {
+    font-weight: 600;
+    transform: translateX(5px);
 }
