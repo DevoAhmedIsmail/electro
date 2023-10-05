@@ -21,7 +21,9 @@ const Category = ({params}: ParamsProps) => {
                 <ProductSectionHeader title='Filters' />
                 <Filters />
             </div>
-            <div className="w-full lg:w-[80%] bg-violet-500">2</div>
+            <div className="w-full lg:w-[80%]">
+                <DisplayProducts slug={params.slug} />
+            </div>
         </div>
         </Container>
     </main>
