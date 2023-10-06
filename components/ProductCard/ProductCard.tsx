@@ -6,7 +6,7 @@ import { LiaCartArrowDownSolid } from "react-icons/lia";
 
 const ProductCard = ({ product }: { product: ProductsType }) => {
   return (
-    <Link href="/" className="px-5 py-3">
+    <Link href={`/product/${product.id}`} className="px-5 py-3">
       <p className="text-[var(--softTextColor)] text-[12px]">{product.brand}</p>
       <p className="text-[#0062bd] font-semibold">{product.title}</p>
       <div className="relative w-full h-44">

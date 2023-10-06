@@ -8,8 +8,9 @@ import qs from "query-string";
 type FilterItemProps = {
   title: string;
   color?: boolean;
-  isLoading: boolean;
-  setIsLoading: (x: boolean) => void;
+  isLoading?: boolean;
+  setIsLoading?: (x: boolean) => void;
+  sideFilterCloseHandler?: (x: boolean) => void;
   options: {
     name: string;
     slug: string;
@@ -31,6 +32,7 @@ const FilterItem = ({
   color,
   isLoading,
   setIsLoading,
+  sideFilterCloseHandler
 }: FilterItemProps) => {
   const router = useRouter();
   const params = useSearchParams();
@@ -85,6 +87,10 @@ const FilterItem = ({
     };
 
     changeUrlParams(updatedQuery);
+    
+    if(sideFilterCloseHandler) {
+      sideFilterCloseHandler(false)
+    }
   }
 
   const changeUrlParams = (updatedQuery: any) => {
