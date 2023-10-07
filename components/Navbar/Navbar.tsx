@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="hidden lg:flex flex-1 gap-5">
+          <div className="hidden lg:flex flex-1 gap-5 items-center">
             <AiOutlineMenu size={24} onClick={onOpen} className="cursor-pointer" />
             <NavLinks />
           </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
               <AiOutlineHeart size={28} className="group-hover:text-[var(--yellowColor)]" />
               <Badge num={2} />
             </Link>
-            <Link href="/" className="cursor-pointer group relative flex-center gap-3">
+            <Link href="/cart" className="cursor-pointer group relative flex-center gap-3">
               <div className="relative">
                 <HiOutlineShoppingBag size={28} className="group-hover:text-[var(--yellowColor)]" />
                 <Badge num={3} />

@@ -6,4 +6,6 @@ export type ProductsType = {
   oldPrice?: number;
   discount?: number;
   brand: string;
+  category?: string;
+  description?: string;
 };

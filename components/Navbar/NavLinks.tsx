@@ -9,7 +9,7 @@ const NavLinks = () => {
   return (
     <div className="flex-center gap-3">
       {links.map((link) => (
-        <div key={link.id} className="flex-center gap-2 relative link">
+        <div key={link.id} className="flex-center gap-2 relative link py-[10px]">
           <Link href={link.href} className="font-semibold text-[15px]">
             {link.title}
           </Link>
