@@ -162,3 +162,29 @@ export const Recommendations = [
         brand: "Dolce & Gabbana"
     },
 ]
+
+export const cartProducts = [
+    {
+        id: 1,
+        title: "product Example 1",
+        imgSrc: "/images/products/phone02.webp",
+        price: 44,
+        oldPrice: 50,
+        discount: 10,
+        brand: "Dolce & Gabbana",
+        category: "phone",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, molestiae deleniti! Deleniti labore incidunt tempore, totam dolor voluptates porro aliquid a corporis, doloribus quod odit enim molestias illo eius eos exercitationem libero quibusdam perspiciatis quos cum soluta atque amet impedit. Blanditiis perferendis ducimus, delectus et necessitatibus voluptates sit alias rerum?",
+        quantity: 1,
+    },{
+        id: 2,
+        title: "product Example 2",
+        imgSrc: "/images/products/printer02.webp",
+        price: 147,
+        oldPrice: 199,
+        discount: 26,
+        brand: "Donna Karan",
+        category: "laptops",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, molestiae deleniti! Deleniti labore incidunt tempore, totam dolor voluptates porro aliquid a corporis, doloribus quod odit enim molestias illo eius eos exercitationem libero quibusdam perspiciatis quos cum soluta atque amet impedit. Blanditiis perferendis ducimus, delectus et necessitatibus voluptates sit alias rerum?",
+        quantity: 2,
+    }
+]
