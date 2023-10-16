@@ -186,5 +186,18 @@ export const cartProducts = [
         category: "laptops",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, molestiae deleniti! Deleniti labore incidunt tempore, totam dolor voluptates porro aliquid a corporis, doloribus quod odit enim molestias illo eius eos exercitationem libero quibusdam perspiciatis quos cum soluta atque amet impedit. Blanditiis perferendis ducimus, delectus et necessitatibus voluptates sit alias rerum?",
         quantity: 2,
+    },
+    {
+        id: 3,
+        title: "product Example 3",
+        imgSrc: "/images/products/speaker02.webp",
+        price: 35,
+        oldPrice: 50,
+        discount: 30,
+        brand: "Ceilin",
+        category: "speakers",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, molestiae deleniti! Deleniti labore incidunt tempore, totam dolor voluptates porro aliquid a corporis, doloribus quod odit enim molestias illo eius eos exercitationem libero quibusdam perspiciatis quos cum soluta atque amet impedit. Blanditiis perferendis ducimus, delectus et necessitatibus voluptates sit alias rerum?",
+        quantity: 1,
+
     }
 ]

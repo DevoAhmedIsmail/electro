@@ -15,9 +15,11 @@ import { IoGitCompare } from "react-icons/io5";
 import NavLinks from "./NavLinks";
 import Badge from "./Badge";
 import useSideBar from "@/hooks/useSidebar";
+import useSideBarCart from "@/hooks/useSidebarCart";
 
 const Navbar = () => {
   const { isOpen, onOpen } = useSideBar();
+  const { isOpen: isOpenCart, onOpen: onOpenCart } = useSideBarCart();
     
   return (
     <nav className="bg-[var(--bgColor)] py-2 w-full z-50">
@@ -50,13 +52,13 @@ const Navbar = () => {
               <AiOutlineHeart size={28} className="group-hover:text-[var(--yellowColor)]" />
               <Badge num={2} />
             </Link>
-            <Link href="/cart" className="cursor-pointer group relative flex-center gap-3">
+            <div onClick={onOpenCart} className="cursor-pointer group relative flex-center gap-3">
               <div className="relative">
                 <HiOutlineShoppingBag size={28} className="group-hover:text-[var(--yellowColor)]" />
                 <Badge num={3} />
               </div>
               <span className="hidden lg:inline-block text-sm font-semibold">600.00$</span>
-            </Link>
+            </div>
           </div>
         </div>
       </Container>

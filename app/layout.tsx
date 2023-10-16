@@ -8,6 +8,7 @@ import Footer from "@/components/Footer/Footer";
 
 import { Inter } from "next/font/google";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import SidebarCart from "@/components/SidebarCart/SidebarCart";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <ThemeProvider>
             <Navbar />
             <Sidebar />
+            <SidebarCart />
             {children}
             <Footer />
           </ThemeProvider>
