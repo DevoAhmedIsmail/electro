@@ -1,0 +1,23 @@
+.table_column {
+    padding: 16px;
+}
+
+.table_column_item {
+    padding: 24px 16px;
+}
+
+.table_column-1 {
+    flex: 0 0 8.33333%;
+}
+.table_column-2 {
+    flex: 0 0 39.666666%;
+}
+.table_column-3 {
+    flex: 0 0 16.66667%;
+}
+.table_column-4 {
+    flex: 0 0 18.66666%;
+}
+.table_column-5 {
+    flex: 0 0 16.666667%;
+}
